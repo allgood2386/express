@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1= title
+        form#formAddPost(name="addpost",method="post",action="/addpost" class="form")
+            div
+                input#Title(type="text", placeholder="title", name="title", class="form-control")
+            div
+                textarea#Body(type="textarea", placeholder="body", name="body", class="form-control")
+            div
+                button#btnSubmit(type="submit" class="btn btn-default") submit

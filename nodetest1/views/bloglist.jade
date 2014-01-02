@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1. Blogs
+    ul
+        each blog, i in bloglist
+            li
+                h2 #{blog.title}
+                p.
+                    #{blog.body}
